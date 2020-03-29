@@ -4,15 +4,14 @@ class Application
     resp = Rack::Response.new
 
     time = Time.now
-    binding.pry
-
     # binding.pry
-    # if Time.now.h < 12
-    #   resp.write "Good Morning!"
-    # else
-    #   resp.write "Good Afternoon!"
-    # end
-    resp.write "Testing"
+
+    binding.pry
+    if Time.now.h < 12
+      resp.write "Good Morning!"
+    else
+      resp.write "Good Afternoon!"
+    end
 
     resp.finish
   end
