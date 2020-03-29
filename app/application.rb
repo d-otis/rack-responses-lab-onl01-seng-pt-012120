@@ -4,7 +4,9 @@ class Application
     resp = Rack::Response.new
 
     binding.pry
-
+    if Time.now.h < 12
+      
+    end
 
     resp.finish
   end
